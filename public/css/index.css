@@ -73,6 +73,7 @@ a:hover {
     background-color: #040004f4;
     backdrop-filter: blur(4px);
     padding: 2em;
+    cursor: pointer;
 
     display: grid;
     place-items: center;
