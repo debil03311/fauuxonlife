@@ -2,7 +2,7 @@
 
 An alternative, [fauux](https://fauux.neocities.org)-inspired interface for the [lainon.life](https://lainon.life) web radio.
 
-![Screenshot](./asset/demo.png)
+![Screenshot](./screenshots/Screenshot.png)
 
 ## Credit
 
