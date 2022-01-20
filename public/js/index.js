@@ -56,7 +56,7 @@ const backgrounds = [
 
 document.body.style.setProperty(
     "background-image",
-    `url("./asset/${rArr(backgrounds)}")`
+    `url("./public/asset/${rArr(backgrounds)}")`
 );
 
 // Default settings

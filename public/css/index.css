@@ -22,7 +22,7 @@
 
 body {
     min-height: 100vh;
-    background: #000 url("./asset/bg205.gif");
+    background: #000 url("./public/asset/bg205.gif");
     color: var(--pale);
     font: 500 1em "Share Tech Mono", "Zen Maru Gothic", monospace;
     line-height: 1.4em;
