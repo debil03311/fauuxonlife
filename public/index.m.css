@@ -1,0 +1,14 @@
+@media only screen and (max-width: 800px) {
+    header {
+        font-size: 1.4rem;
+    }
+
+    #current-song {
+        line-height: 1.4em;
+        flex-direction: column;
+    }
+
+    #current-date {
+        font-size: 1rem;
+    }
+}

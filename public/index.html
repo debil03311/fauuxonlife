@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <meta property="og:image" content=""> -->
+    <meta property="og:title" content="lainon.life radio">
+    <meta property="og:description" content="fauux-inspired third party web interface for the lainon.life radio">
+    <meta name="theme-color" content="#d2738a">
+
+    <title>Document</title>
+
+    <link preload rel="stylesheet" href="./icofont/icofont.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.m.css">
+    <script src="./js/cookie.js"></script>
+</head><body>
+    <div id="darken" class="overlay no-select"></div>
+    <div id="scanlines" class="overlay no-select"></div>
+
+    <audio id="audio" class="hidden"
+    controls
+    preload="none"
+    src="https://lainon.life/radio/cafe.ogg">
+    </audio>
+
+    <div id="cors-message" class="hidden">
+        <div id="cors-content">
+            <h1>Unfortunately, the internet is ruined.</h1>
+
+            <p>
+                However, it's not the end of the world yet, you can fix it! It's actually really easy, all you have to do is get an extension/add-on for your browser that enables CORS anywhere. If you're Chromium-based, check <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">this one</a> out, and if you're on FireFox, then I have no idea. Maybe <a href="https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/">this one</a>? Do keep in mind that enforcing CORS at all times could break some other sites you may frequent.
+            </p>
+        </div>
+    </div>
+
+    <header>
+        fauux(<a href="https://lainon.life/">lainon.life</a>): [<span class="listeners current" title="Listening">0</span>, <span class="listeners peak" title="Peak Listeners">0</span>]
+    </header>
+
+    <section id="player">
+        <div id="progress-bar"
+             style="width: 0%"
+             class="no-select">
+        </div>
+
+        <div id="volume-bar"
+             style="width: 60%"
+             class="no-select">
+        </div>
+
+        <div id="current-details" class="no-select">
+            <span id="current-song">
+                <span id="current-title">NULL</span>
+                <span id="current-date">NULL</span>
+            </span>
+
+            <span id="current-album">NULL</span>
+            <span id="current-artist">NULL</span>
+        </div>
+    </section>
+
+    <section id="channels">
+        <i  id="cafe"
+            title="cafe"
+            class="channel icofont-coffee-alt"
+            onclick="switchChannel(this.id)"
+        ></i><i id="cyberia"
+            title="cyberia"
+            class="channel icofont-micro-chip"
+            onclick="switchChannel(this.id)"
+        ></i><i id="everything"
+            title="everything"
+            class="channel icofont-earth"
+            onclick="switchChannel(this.id)"
+        ></i><i id="swing"
+            title="swing"
+            class="channel icofont-retro-music-disk"
+            onclick="switchChannel(this.id)"
+        ></i>
+    </section>
+
+    <section id="song-list">
+        <div id="list-previous"></div>
+        <div id="list-current">Select one of the channels above to start listening.</div>
+        <div id="list-next"></div>
+    </section>
+
+<script defer src="./index.js"></script>
+</body></html>
