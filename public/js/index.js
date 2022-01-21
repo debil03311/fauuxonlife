@@ -71,8 +71,13 @@ let progressStep = 0;
  */
 
 async function fetchData() {
+    // Since lainon.life doesn't allow CORS, the request must be
+    // made through a proxy. This "crosscloak" is my fork of
+    // cors-anywhere, and just in case you're thinking about it,
+    // no, it's not public and your domain is not on the whitelist.
+
     const data = await
-        fetch(`https://lainon.life/playlist/${currentChannel.toLowerCase()}.json`)
+        fetch(`https://crosscloak.herokuapp.com/https://lainon.life/playlist/${currentChannel.toLowerCase()}.json`)
         .then((response)=> response.json())
         .catch((ERROR)=> {
             console.error(ERROR);
