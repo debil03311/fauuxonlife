@@ -3,6 +3,28 @@
 :root {
     --pink: #d2738a;
     --pale: #c1b492;
+    --bgcolor: #1e1b1e;
+}
+
+::selection {
+    background-color: var(--pink);
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    --size: 8px;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--bgcolor);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--bgcolor);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--pink);
+    box-shadow: inset 0 0 0 1px var(--bgcolor);
 }
 
 * {
@@ -98,7 +120,7 @@ header,
 section
 {
     width: clamp(256px, 896px, 90%);
-    background-color: #1e1b1e;
+    background-color: var(--bgcolor);
     box-shadow: 0 0 16px #d2738a32;
     padding: 1rem;
     margin: .8rem;
