@@ -67,6 +67,7 @@ let progressStep = 0;
 
 /**
  * Send a GET request to lainon.life, then do stuff with the reponse.
+ * @returns {Object} data - Information about the present radio state
  */
 
 async function fetchData() {
