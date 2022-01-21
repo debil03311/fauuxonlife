@@ -19,6 +19,8 @@ const e_listeners = {
 }
 
 const e_audio = document.getElementById("audio");
+e_audio.volume = 0.6;
+
 const e_corsMessage = document.getElementById("cors-message");
 const e_player = document.getElementById("player");
 const e_progressBar = document.getElementById("progress-bar");
