@@ -21,7 +21,7 @@ const e_listeners = {
 const e_audio = document.getElementById("audio");
 e_audio.volume = 0.6;
 
-const e_corsMessage = document.getElementById("cors-message");
+const e_warningMessage = document.getElementById("warning-message");
 const e_player = document.getElementById("player");
 const e_progressBar = document.getElementById("progress-bar");
 const e_volumeBar = document.getElementById("volume-bar");
@@ -83,7 +83,7 @@ async function fetchData() {
         .then((response)=> response.json())
         .catch((ERROR)=> {
             console.error(ERROR);
-            e_corsMessage.classList.remove("hidden");
+            e_warningMessage.classList.remove("hidden");
         });
 
     parseData(data);
