@@ -37,12 +37,7 @@
     <div id="scanlines" class="overlay no-select"></div>
     <div id="vignette" class="overlay no-select"></div>
 
-    <audio id="audio" class="hidden"
-        preload="none"
-        src="https://lainon.life/radio/cafe.ogg"
-    ></audio>
-
-    <div id="cors-message" class="hidden" onclick="this.classList.add('hidden')">
+    <div id="cors-message" class="overlay hidden" onclick="this.classList.add('hidden')">
         <div id="cors-content">
             <h2>Unfortunately, the internet is ruined.</h2>
 
@@ -51,6 +46,11 @@
             </p>
         </div>
     </div>
+
+    <audio id="audio" class="hidden"
+        preload="none"
+        src="https://lainon.life/radio/cafe.ogg"
+    ></audio>
 
     <header>
         fauux(<a href="https://lainon.life/">lainon.life</a>): [<span class="listeners current" title="Listening">0</span>, <span class="listeners peak" title="Peak Listeners">0</span>]
