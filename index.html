@@ -37,12 +37,16 @@
     <div id="scanlines" class="overlay no-select"></div>
     <div id="vignette" class="overlay no-select"></div>
 
-    <div id="cors-message" class="overlay hidden" onclick="this.classList.add('hidden')">
-        <div id="cors-content">
-            <h2>Unfortunately, the internet is ruined.</h2>
+    <div id="warning-message" class="overlay hidden" onclick="this.classList.add('hidden')">
+        <div id="warning-content">
+            <h2>Something went wrong.</h2>
 
             <p>
-                However, it's not the end of the world yet, you can fix it! It's actually really easy, all you have to do is get an extension/add-on for your browser that enables CORS anywhere. If you're Chromium-based, check <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">this one</a> out, and if you're on FireFox, then I have no idea. Maybe <a href="https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/">this one</a>? Do keep in mind that enforcing CORS at all times could break some other sites you may frequent.
+                Failed to fetch the necessary data. Check to see if <a href="https://lainon.life">lainon.life</a> is down.
+            </p>
+
+            <p>
+                If it's not down then there's an issue with CORS, but you can probably it yourself! All you have to do is get an extension/add-on for your browser that enables CORS anywhere. If you're Chromium-based, check <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">this one</a> out. If you're on FireFox, I have no idea, maybe <a href="https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/">this one</a>? Do keep in mind that enforcing CORS at all times could break some other sites you may frequent.
             </p>
         </div>
     </div>

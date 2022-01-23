@@ -92,7 +92,7 @@ a:hover {
     z-index: 2;
 }
 
-#cors-message {
+#warning-message {
     background-color: #040004f4;
     backdrop-filter: blur(4px);
     padding: 2em;
@@ -103,12 +103,12 @@ a:hover {
     z-index: 2;
 }
 
-#cors-message h1 {
+#warning-message h1 {
     color: var(--pink);
     text-align: center;
 }
 
-#cors-content {
+#warning-content {
     max-width: 800px;
 }
 
